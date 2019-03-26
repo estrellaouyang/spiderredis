@@ -66,7 +66,11 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'reserve2.pipelines.Reserve2Pipeline': 300,
+   'reserve2.pipelines_store_to_mongo.Store2MongoPipeline': 400
 }
+
+MONGO_URI = 'mongodb://localhost:27017'
+MONGO_DATABASE = 'mydatabase'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

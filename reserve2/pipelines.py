@@ -27,5 +27,5 @@ class Reserve2Pipeline(object):
      ##   point_str = item.get('point')
      ##   match = re.match(regex,point_str)
      ##   item['point']=match.group(0)
-
         return item
+        
